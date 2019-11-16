@@ -1,0 +1,33 @@
+body {
+  background-color: lightblue;
+}
+
+h1 {
+  color: red;
+  text-align: center;
+  font-family: times;
+}
+
+h2 {
+  color: red;
+  text-align: center;
+  font-family: times;
+}
+
+h3 {
+  color: red;
+  text-align: center;
+  font-family: times;
+}
+
+p {
+  font-family: times;
+  font-size: 20px;
+  color: purple;
+}
+
+li {
+  font-family: monospace;
+  font-size: 16px;
+  color: teal;
+}
