@@ -1,7 +1,16 @@
 import cv2
 import numpy as np
+import image_slicer
 
-img_rgb = cv2.imread('TestOne.png')
+
+image_slicer.slice('TestOne.png', 4)
+
+TopLeft = 'REE_01_01.png'
+TopRight = 'REE_01_02.png'
+BottomLeft = 'REE_01_03.png'
+BottomRight = 'REE_01_04.png'
+
+img_rgb = cv2.imread("TestOne_02_01.png")
 img_gray = cv2.cvtColor(img_rgb, cv2.COLOR_BGR2GRAY)
 
 template = cv2.imread('copy.png',0)
@@ -14,4 +23,4 @@ loc = np.where( res >= threshold)
 for pt in zip(*loc[::-1]):
     cv2.rectangle(img_rgb, pt, (pt[0] + w, pt[1] + h), (0,255,255), 2)
 
-cv2.imwrite('testingagain.png',img_rgb)
+cv2.imwrite('testingagainagain.png',img_rgb)
