@@ -14,7 +14,7 @@ def order66(backgroundImage):
     firstluckbox3(backgroundImage)
     firstpoop1(backgroundImage)
     firstpoop2(backgroundImage)
-    firstpipe(backgroundImage)
+    # firstpipe(backgroundImage)
 
 def firstluckbox1(backgroundImage):
     engine = pyttsx3.init()
@@ -99,21 +99,21 @@ def firstpoop2(backgroundImage):
         engine.runAndWait()
     cv2.imwrite('resultpoop2.png',img_rgb)
 
-def firstpipe(backgroundImage):
-    engine = pyttsx3.init()
-    backgroundImage = 'REEE_01_01.png'
-    img_rgb = cv2.imread(backgroundImage)
-    img_gray = cv2.cvtColor(img_rgb, cv2.COLOR_BGR2GRAY)
-    template = cv2.imread('pipe.png',0)
-    w, h = template.shape[::-1]
-    res = cv2.matchTemplate(img_gray,template,cv2.TM_CCOEFF_NORMED)
-    threshold = 0.3
-    loc = np.where( res >= threshold)
-    for pt in zip(*loc[::-1]):
-        cv2.rectangle(img_rgb, pt, (pt[0] + w, pt[1] + h), (0,255,255), 2)
-        engine.say("There is a pipe on Top Left of the playing field")
-        engine.runAndWait()
-    cv2.imwrite('resultpipe.png',img_rgb)
+# def firstpipe(backgroundImage):
+#     engine = pyttsx3.init()
+#     backgroundImage = 'REEE_01_01.png'
+#     img_rgb = cv2.imread(backgroundImage)
+#     img_gray = cv2.cvtColor(img_rgb, cv2.COLOR_BGR2GRAY)
+#     template = cv2.imread('pipe.png',0)
+#     w, h = template.shape[::-1]
+#     res = cv2.matchTemplate(img_gray,template,cv2.TM_CCOEFF_NORMED)
+#     threshold = 0.3
+#     loc = np.where( res >= threshold)
+#     for pt in zip(*loc[::-1]):
+#         cv2.rectangle(img_rgb, pt, (pt[0] + w, pt[1] + h), (0,255,255), 2)
+#         engine.say("There is a pipe on Top Left of the playing field")
+#         engine.runAndWait()
+#     cv2.imwrite('resultpipe.png',img_rgb)
 
 
 def order69(backgroundImage):
@@ -123,7 +123,7 @@ def order69(backgroundImage):
     secondluckbox3(backgroundImage)
     secondpoop1(backgroundImage)
     secondpoop2(backgroundImage)
-    secondpipe(backgroundImage)
+    # secondpipe(backgroundImage)
 
 def secondluckbox1(backgroundImage):
     engine = pyttsx3.init()
@@ -208,21 +208,21 @@ def secondpoop2(backgroundImage):
         engine.runAndWait()
     cv2.imwrite('resultpoop2.png',img_rgb)
 
-def secondpipe(backgroundImage):
-    engine = pyttsx3.init()
-    backgroundImage = 'REEE_01_02.png'
-    img_rgb = cv2.imread(backgroundImage)
-    img_gray = cv2.cvtColor(img_rgb, cv2.COLOR_BGR2GRAY)
-    template = cv2.imread('pipe.png',0)
-    w, h = template.shape[::-1]
-    res = cv2.matchTemplate(img_gray,template,cv2.TM_CCOEFF_NORMED)
-    threshold = 0.3
-    loc = np.where( res >= threshold)
-    for pt in zip(*loc[::-1]):
-        cv2.rectangle(img_rgb, pt, (pt[0] + w, pt[1] + h), (0,255,255), 2)
-        engine.say("There is a pipe on Top Right of the playing field")
-        engine.runAndWait()
-    cv2.imwrite('resultpipe.png',img_rgb)
+# def secondpipe(backgroundImage):
+#     engine = pyttsx3.init()
+#     backgroundImage = 'REEE_01_02.png'
+#     img_rgb = cv2.imread(backgroundImage)
+#     img_gray = cv2.cvtColor(img_rgb, cv2.COLOR_BGR2GRAY)
+#     template = cv2.imread('pipe.png',0)
+#     w, h = template.shape[::-1]
+#     res = cv2.matchTemplate(img_gray,template,cv2.TM_CCOEFF_NORMED)
+#     threshold = 0.3
+#     loc = np.where( res >= threshold)
+#     for pt in zip(*loc[::-1]):
+#         cv2.rectangle(img_rgb, pt, (pt[0] + w, pt[1] + h), (0,255,255), 2)
+#         engine.say("There is a pipe on Top Right of the playing field")
+#         engine.runAndWait()
+#     cv2.imwrite('resultpipe.png',img_rgb)
 
 def order420(backgroundImage):
     # backgroundImage = "PipeTest.png"
@@ -232,7 +232,7 @@ def order420(backgroundImage):
     thirdluckbox3(backgroundImage)
     thirdpoop1(backgroundImage)
     thirdpoop2(backgroundImage)
-    thirdpipe(backgroundImage)
+    # thirdpipe(backgroundImage)
 
 def thirdluckbox1(backgroundImage):
     engine = pyttsx3.init()
@@ -317,21 +317,21 @@ def thirdpoop2(backgroundImage):
         engine.runAndWait()
     cv2.imwrite('resultpoop2.png',img_rgb)
 
-def thirdpipe(backgroundImage):
-    engine = pyttsx3.init()
-    backgroundImage = 'REEE_02_01.png'
-    img_rgb = cv2.imread(backgroundImage)
-    img_gray = cv2.cvtColor(img_rgb, cv2.COLOR_BGR2GRAY)
-    template = cv2.imread('pipe.png',0)
-    w, h = template.shape[::-1]
-    res = cv2.matchTemplate(img_gray,template,cv2.TM_CCOEFF_NORMED)
-    threshold = 0.3
-    loc = np.where( res >= threshold)
-    for pt in zip(*loc[::-1]):
-        cv2.rectangle(img_rgb, pt, (pt[0] + w, pt[1] + h), (0,255,255), 2)
-        engine.say("There is a pipe on Bottom Left of the playing field")
-        engine.runAndWait()
-    cv2.imwrite('resultpipe.png',img_rgb)
+# def thirdpipe(backgroundImage):
+#     engine = pyttsx3.init()
+#     backgroundImage = 'REEE_02_01.png'
+#     img_rgb = cv2.imread(backgroundImage)
+#     img_gray = cv2.cvtColor(img_rgb, cv2.COLOR_BGR2GRAY)
+#     template = cv2.imread('pipe.png',0)
+#     w, h = template.shape[::-1]
+#     res = cv2.matchTemplate(img_gray,template,cv2.TM_CCOEFF_NORMED)
+#     threshold = 0.3
+#     loc = np.where( res >= threshold)
+#     for pt in zip(*loc[::-1]):
+#         cv2.rectangle(img_rgb, pt, (pt[0] + w, pt[1] + h), (0,255,255), 2)
+#         engine.say("There is a pipe on Bottom Left of the playing field")
+#         engine.runAndWait()
+#     cv2.imwrite('resultpipe.png',img_rgb)
 
 def order69420(backgroundImage):
     # backgroundImage = "PipeTest.png"
@@ -341,7 +341,7 @@ def order69420(backgroundImage):
     fourthluckbox3(backgroundImage)
     fourthpoop1(backgroundImage)
     fourthpoop2(backgroundImage)
-    fourthpipe(backgroundImage)
+    # fourthpipe(backgroundImage)
 
 def fourthluckbox1(backgroundImage):
     engine = pyttsx3.init()
@@ -426,21 +426,21 @@ def fourthpoop2(backgroundImage):
         engine.runAndWait()
     cv2.imwrite('resultpoop2.png',img_rgb)
 
-def fourthpipe(backgroundImage):
-    engine = pyttsx3.init()
-    backgroundImage = 'REEE_02_02.png'
-    img_rgb = cv2.imread(backgroundImage)
-    img_gray = cv2.cvtColor(img_rgb, cv2.COLOR_BGR2GRAY)
-    template = cv2.imread('pipe.png',0)
-    w, h = template.shape[::-1]
-    res = cv2.matchTemplate(img_gray,template,cv2.TM_CCOEFF_NORMED)
-    threshold = 0.3
-    loc = np.where( res >= threshold)
-    for pt in zip(*loc[::-1]):
-        cv2.rectangle(img_rgb, pt, (pt[0] + w, pt[1] + h), (0,255,255), 2)
-        engine.say("There is a pipe on Bottom Right of the playing field")
-        engine.runAndWait()
-    cv2.imwrite('resultpipe.png',img_rgb)
+# def fourthpipe(backgroundImage):
+#     engine = pyttsx3.init()
+#     backgroundImage = 'REEE_02_02.png'
+#     img_rgb = cv2.imread(backgroundImage)
+#     img_gray = cv2.cvtColor(img_rgb, cv2.COLOR_BGR2GRAY)
+#     template = cv2.imread('pipe.png',0)
+#     w, h = template.shape[::-1]
+#     res = cv2.matchTemplate(img_gray,template,cv2.TM_CCOEFF_NORMED)
+#     threshold = 0.3
+#     loc = np.where( res >= threshold)
+#     for pt in zip(*loc[::-1]):
+#         cv2.rectangle(img_rgb, pt, (pt[0] + w, pt[1] + h), (0,255,255), 2)
+#         engine.say("There is a pipe on Bottom Right of the playing field")
+#         engine.runAndWait()
+#     cv2.imwrite('resultpipe.png',img_rgb)
 
 while True:
     engine = pyttsx3.init()
